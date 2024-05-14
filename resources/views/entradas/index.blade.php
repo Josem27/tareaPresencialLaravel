@@ -13,8 +13,8 @@
 
     <style>
         .btn-action {
-            height: 38px; /* Ajusta la altura según sea necesario */
-            line-height: 1.5; /* Ajusta el espacio dentro del botón */
+            height: 38px; 
+            line-height: 1.5;
         }
     </style>
 
@@ -23,20 +23,18 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Categoría</th>
                         <th>Título</th>
-                        <th>Descripción</th>
-                        <th>Fecha y Usuario</th>
+                        <th>Fecha</th>+
+                        <th>Autor</th>
                         <th>Acciones</th> <!-- Columna de acciones al final -->
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($entradas as $datos)
                     <tr>
-                        <td>{{ $datos->categoria->nombre }}</td>
                         <td>{{ $datos->titulo }}</td>
-                        <td>{!! $datos->descripcion !!}</td>
-                        <td>{{ $datos->fecha }} // {{ $datos->usuario ? $datos->usuario->nick : 'Usuario no disponible' }}</td>
+                        <td>{{ $datos->fecha }}</td>
+                        <td>{{ $datos->usuario ? $datos->usuario->nick : 'Usuario no disponible' }}</td> <!-- Cambiado para mostrar fecha y autor -->
                         <td>
                             <div class="btn-group" role="group" aria-label="Acciones">
                                 <a class="btn btn-primary btn-action" href="{{ route('detalle',$datos->id) }}" role="button"><i class="bi bi-info-circle"></i></a>
