@@ -3,14 +3,14 @@
 @section('contenido')
 @foreach ($detalles as $entrada)
 
-<div class="container cuerpo text-center bg-info text-white py-3">
+<div class="container cuerpo text-center bg-success text-white py-3">
     <div>
         <h2>Editando entrada</h2>
     </div>
     <hr class="bg-light" width="50%">
 </div>
 
-<div class="container cuerpo text-center bg-info text-white py-3">
+<div class="container cuerpo text-center bg-success text-white py-3">
     <div>
         <a class="btn btn-primary" href="{{ route('entradas', [0]) }}" role="button">Volver</a>
     </div>

@@ -86,9 +86,9 @@ class Controlador extends Controller
 
     public function listado()
     {
-        $datos = $this->entrada->listado();
+        $datos = $this->entrada->listado()->orderBy('fecha', 'asc')->get();
         return view('listado', ["titulo" => "Listado", "datos" => $datos]);
-    }
+    }    
 
     public function nuevaEntrada(Request $request)
     {

@@ -4,13 +4,13 @@
 
 @foreach ($detalles as $datos)
 <div class="container cuerpo text-center">
-    <div class="bg-info text-white py-3">
+    <div class="bg-success text-white py-3">
         <h2>Entrada de: {{$datos->usuario->nick}}</h2>
         <hr class="bg-light" width="50%">
     </div>
 
     <div class="text-center">
-        <div class="bg-info text-white py-3">
+        <div class="bg-success text-white py-3">
             <h3>{{$datos->titulo}}</h3>
             <hr class="bg-light" width="50%">
         </div><br>
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="bg-info text-white py-3">
+    <div class="bg-success text-white py-3">
         <hr class="bg-light" width="50%">
         <a class="btn btn-primary" href="{{route('entradas',[0])}}" role="button">Volver</a>
     </div>

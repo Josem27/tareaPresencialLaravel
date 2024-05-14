@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header bg-info text-white">
+                <div class="card-header bg-success text-white">
                     <h2 class="text-center">Acceso</h2>
                 </div>
                 <div class="card-body">
