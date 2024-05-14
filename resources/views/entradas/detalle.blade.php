@@ -25,6 +25,49 @@
             <label for="descripcion"><b>Descripción:</b></label><br>
             <label>{!! $datos->descripcion !!}</label><br>
         </div>
+
+        <div>
+            <label for="fecha"><b>Fecha:</b></label><br>
+            <label>{{$datos->fecha}}</label><br>
+        </div>
+
+        <div>
+            <label for="hora"><b>Hora:</b></label><br>
+            <label>{{$datos->hora}}</label><br>
+        </div>
+
+        <div>
+            <label for="lugar"><b>Lugar:</b></label><br>
+            <label>{{$datos->lugar}}</label><br>
+        </div>
+
+        <div>
+            <label for="prioridad"><b>Prioridad:</b></label><br>
+            <label>
+                @switch($datos->prioridad)
+                    @case(1)
+                        1 - Muy Baja
+                        @break
+                    @case(2)
+                        2 - Baja
+                        @break
+                    @case(3)
+                        3 - Media
+                        @break
+                    @case(4)
+                        4 - Alta
+                        @break
+                    @case(5)
+                        5 - Muy Alta
+                        @break
+                @endswitch
+            </label><br>
+        </div>
+
+        <div>
+            <label for="estado"><b>Estado:</b></label><br>
+            <label>{{ ucfirst($datos->estado) }}</label><br>
+        </div>
     </div>
 
     <div class="bg-info text-white py-3">
