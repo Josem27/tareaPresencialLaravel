@@ -56,7 +56,7 @@ class EntradasController extends Controller
 
             if ($imagen = $request->imagen) {
                 $nombreFichImg = time() . "-" . $imagen->getClientOriginalName();
-                Storage::putFileAs('public/fotos', $imagen, $nombreFichImg);
+                Storage::putFileAs('public/images', $imagen, $nombreFichImg);
                 Storage::setVisibility($nombreFichImg, 'public');
                 $entrada->imagen = $nombreFichImg;
             } else {
@@ -140,7 +140,7 @@ class EntradasController extends Controller
 
             if ($imagen = $request->imagen) {
                 $nombreFichImg = time() . "-" . $imagen->getClientOriginalName();
-                Storage::putFileAs('public/fotos', $imagen, $nombreFichImg);
+                Storage::putFileAs('public/images', $imagen, $nombreFichImg);
                 Storage::setVisibility($nombreFichImg, 'public');
                 $entrada->imagen = $nombreFichImg;
             } else {
