@@ -45,6 +45,7 @@ Route::middleware(['web'])->group(function () {
 
     Route::get('/eliminar/{id}', [EntradasController::class, 'eliminar'])->name('eliminar');
     Route::delete('/eliminar/{id}', [EntradasController::class, 'borrar'])->name('eliminar');
+    Route::get('/', 'Controlador@index')->name('index');
 
     Route::get('/logs', [LogsController::class, 'listado'])->name('logs');
 

@@ -24,7 +24,7 @@
                 <thead>
                     <tr>
                         <th>Título</th>
-                        <th>Fecha</th>+
+                        <th>Fecha</th>
                         <th>Autor</th>
                         <th>Acciones</th> <!-- Columna de acciones al final -->
                     </tr>
