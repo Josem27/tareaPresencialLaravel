@@ -16,7 +16,7 @@
         </div><br>
 
         <label for="imagen"><b>Imagen</b></label><br>
-        <img src="{{asset('storage/'.$datos->imagen)}}" width="260"><br>
+        <img src="{{ asset('images/' . $datos->imagen) }}" width="260"><br>
 
         <label for="categoria"><b>Categoría:</b></label><br>
         <label for="categoria">{{$datos->categoria->nombre}}</label><br>

@@ -27,7 +27,7 @@
         </div>
 
         <div class="mb-3">
-            <img src="{{ asset('storage/fotos/'.$entrada->imagen) }}" width="260"><br>
+            <img src="{{ asset('images/'.$entrada->imagen) }}" width="260"><br>
             <label for="imagen" class="form-label">Imagen</label>
             <input type="file" name="imagen" class="form-control-file">
         </div>
